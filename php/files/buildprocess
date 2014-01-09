@@ -1,0 +1,6 @@
+#!/bin/sh
+path=/tmp/php-5.4.23
+cd $path
+./configure --enable-fpm --with-mcrypt --with-libdir=lib64 --with-zlib --with-config-file-path=/etc --enable-mbstring --with-openssl --with-mysql --with-mysql-sock --with-curl --with-kerberos --with-pdo-mysql --with-gd --with-jpeg-dir=/usr/lib64 --enable-gd-native-ttf --with-imap --with-imap-ssl --with-freetype-dir=/usr/lib64
+make && make install
+exit
