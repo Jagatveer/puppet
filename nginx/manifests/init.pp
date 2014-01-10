@@ -1,3 +1,7 @@
+# Author Jagatveer Singh
+# Rough class needs revision
+#
+
 class nginx {
 Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
 file { "/tmp/nginx-1.4.4.tar.gz":
