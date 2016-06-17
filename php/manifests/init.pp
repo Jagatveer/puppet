@@ -1,7 +1,7 @@
 #
 #Author Jagatveer Singh
 #
-
+#
 class php{
 file {'/tmp/php-5.4.23.tar.gz':
 	mode => '644',
@@ -35,14 +35,14 @@ owner => 'root',
         command => 'make',
 	cwd => '/tmp/php-5.4.23',
 	timeout => 0,
-	path => ['/usr/bin'], 
-   } 
+	path => ['/usr/bin'],
+   }
 
         exec { "make install in /tmp/php-5.4.23":
         command => 'make install',
 	cwd => '/tmp/php-5.4.23',
 	timeout => 0,
-	path => ['/usr/bin'], 
+	path => ['/usr/bin'],
     }
 
-} 
+}
